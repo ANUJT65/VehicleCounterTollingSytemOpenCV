@@ -8,5 +8,5 @@ The script counts vehicles crossing a designated line, making it a valuable tool
 The original video and an augmented version, highlighting detected vehicles, are displayed in real-time and both screen shots are provided here
 Users can stop the process with a simple Enter key press.
 
-This tool addresses the importance of accurate vehicle counting in tolling systems, ensuring transparency and efficiency in toll collection. Adjustments to parameters may be necessary based on the specific characteristics of the toll booth environment.
+This tool addresses the importance of accurate vehicle counting in tolling systems, ensuring transparency and efficiency in toll collection. 
 ![vehiclecounter2](https://github.com/ANUJT65/VehicleCounterTollingSytemOpenCV/assets/123918593/02b3fa73-2a5a-46b1-b226-5138609abaee)
