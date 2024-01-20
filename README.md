@@ -4,8 +4,8 @@ The proposed project introduces an innovative and accountable car tolling system
 
 This Python script serves the purpose of implementing a vehicle counting system using OpenCV, specifically designed for tolling systems.
 The technology stack includes the OpenCV library,numpy etc. The script employs background subtraction to detect moving vehicles, utilizing contours for precise identification.
-The purpose of the tolling system becomes apparent as the script counts vehicles crossing a designated line, making it a valuable tool for monitoring toll booth activity.
-The original video and an augmented version, highlighting detected vehicles, are displayed in real-time.
+The script counts vehicles crossing a designated line, making it a valuable tool for monitoring toll booth activity.
+The original video and an augmented version, highlighting detected vehicles, are displayed in real-time and both screen shots are provided here
 Users can stop the process with a simple Enter key press.
 
 This tool addresses the importance of accurate vehicle counting in tolling systems, ensuring transparency and efficiency in toll collection. Adjustments to parameters may be necessary based on the specific characteristics of the toll booth environment.
