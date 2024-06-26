@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "repl-nix-vehiclecountertollingsytemopencv"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "repl_nix_vehiclecountertollingsytemopencv"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+opencv-python = "^4.10.0.84"
+flet = "^0.23.2"
+numpy = "^2.0.0"
+flask = "^3.0.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
