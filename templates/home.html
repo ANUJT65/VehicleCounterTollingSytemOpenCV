@@ -1,50 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Anuj Careers</title>
-    <style>h1{
-   font-size: 40px;
-   font-family: Roboto;
-   font-weight: bold;
-  color: rgb(100,0,1);
-  text-align: center;
-
-    }
-    #banner{
-      width: 100%;
+<head>
+  <title>Anuj Careers</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <style>
+    #banner {
       height: 360px;
-    
+      width: 100%;
+      object-fit: cover;
     }
-      h2{
-   font-size: 32px;
-   font-family: Roboto;
-   font-weight: bold;
-  color: rgb(100,0,100);
-  text-align: center;
-
-      }
-      p{
-  
-   font-family: Roboto;
-  color: rgb(100,0,1);
-      }
-      #container{
-        max-width: 720px;
-        margin: 0 auto 0 auto;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="container">
-      <h1>Pune Careers</h1>
-     <img id="banner" src="https://2b7a8475-b229-4c95-9297-f450dd0c5c67-00-1gfozjbq8nbg6.janeway.replit.dev/static/Job.jpg" >
-    <h2>About pune:</h2>
-    <p>Pune, located in the western Indian state of Maharashtra, is a vibrant city renowned for its rich history, cultural heritage, and modern outlook. Once the seat of the Peshwas (prime ministers) of the Maratha Empire, Pune blends traditional charm with rapid urban development. It is often called the "Oxford of the East" due to its numerous educational institutions that attract students from across India and the world. The city is also known for its pleasant climate, bustling markets, and diverse culinary scene, offering everything from street food delights to upscale dining experiences. </p>
-    <h2> Open Positions </h2>
-    <p>TO-DO Show the jobs here</p>
-      <div style="text-align: center;">
-    <button>Contact Us</button></div>
-      </div>
-    <p>Copyright 2004</p>
-  </body>
+    h2 {
+      color: rgb(100, 0, 100);
+    }
+    h1 {
+      color: rgb(100, 0, 0);
+    }
+    .mt-2 {
+      margin-top: 16px;
+    }
+    .mb-2 {
+      margin-bottom: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="text-center mt-2 mb-2">Pune Careers</h1>
+  <img class="img-fluid" id="banner" src="https://2b7a8475-b229-4c95-9297-f450dd0c5c67-00-1gfozjbq8nbg6.janeway.replit.dev/static/Job.jpg">
+  <div class="container">
+    
+    <h2 class="text-center mt-2 mb-2">About Pune:</h2>
+    <p class="lead">
+      Pune, located in the western Indian state of Maharashtra, is a vibrant city renowned for its rich history, cultural heritage, and modern outlook. Once the seat of the Peshwas (prime ministers) of the Maratha Empire, Pune blends traditional charm with rapid urban development. It is often called the "Oxford of the East" due to its numerous educational institutions that attract students from across India and the world. The city is also known for its pleasant climate, bustling markets, and diverse culinary scene, offering everything from street food delights to upscale dining experiences.
+    </p>
+    <h2 class="text-center mt-2 mb-2">Open Positions</h2>
+    <div>
+      {% for job in jobs %}
+      {% include 'jobitem.html' %}
+      {% endfor %}
+    </div>
+    <div class="text-center">
+      <button class="btn btn-primary btn-lg">Contact Us</button>
+    </div>
+  </div>
+  <p class="text-center">Copyright 2004</p>
+</body>
 </html>
